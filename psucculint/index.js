@@ -48,3 +48,12 @@ burger.onclick = (e) => {
     }
     
 };
+
+const gaddisHelpDate = document.querySelector("#gaddisHelpDate")
+if(gaddisHelpDate){
+    const date = new Date();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const year = date.getFullYear();
+    gaddisHelpDate.innerHTML = "//" + month + "/" + day + "/" + year;
+}
