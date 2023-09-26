@@ -23,7 +23,8 @@ burger.onclick = (e) => {
         line3.style.transform = "translateY(-8px)";
         line3.style.borderRadius = "2px";
 
-        navInner.style.left = "0";
+        navInner.style.boxShadow = "0px 2px 5px var(--shadowColor)";
+        navInner.style.top = "0";
         setTimeout(e => {
             line1.style.transform = "translateY(8px) rotate(45deg)";
             line3.style.transform = "translateY(-8px) rotate(-45deg)";
@@ -39,7 +40,8 @@ burger.onclick = (e) => {
         line3.style.transform = "translateY(-8px) rotate(0deg)";
         line3.style.borderRadius = "0px";
 
-        navInner.style.left = "-100vw";
+        navInner.style.boxShadow = "none";
+        navInner.style.top = "-60vh";
         setTimeout(e => {
             line1.style.transform = "translateY(0px) rotate(0deg)";
             line3.style.transform = "translateY(0px) rotate(0deg)";
