@@ -27,6 +27,12 @@ body{
 }
 
 /* 2. Fonts & Colors */
+@font-face{
+    font-family:"Oswald";
+    src: 
+      url("./../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
 :root{
     --mainColor: #89C673;
     --secondaryColor: #FFFEFC;
@@ -51,6 +57,8 @@ nav{
     height: 42px;
     box-shadow: 0px 2px 5px var(--shadowColor);
     z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 #navLogo{
@@ -169,24 +177,23 @@ a:hover{
 
 /* 5. Headers */
 .mainHead{
-    margin: 36px 0;
+    margin:72px 0 36px 0;
     display: flex;
     justify-content: center;
     text-align: center;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
     font-size: 48px;
-}
-
-.subHead{
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    font-weight: 600;
 }
 
 .innerHeader2{
+    color: var(--darkColor);
     text-align: center;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0px var(--mainColor);
 }
 
 .innerHeader3{
@@ -207,6 +214,10 @@ a:hover{
     flex-direction: column;
     align-items: center;
     margin: 0 46px;
+}
+
+.innerSection{
+    margin-bottom: 26px;
 }
 
 .innerSection p{
