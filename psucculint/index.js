@@ -1,6 +1,6 @@
 /* 
     1. Navbar 
-    2. Gaddis Formatting
+    2. Gaddis Help
 */
 
 
@@ -51,6 +51,7 @@ burger.onclick = (e) => {
     
 };
 
+/* 2. Gaddis Help */
 const gaddisHelpDate = document.querySelector("#gaddisHelpDate")
 if(gaddisHelpDate){
     const date = new Date();
