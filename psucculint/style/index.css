@@ -42,7 +42,7 @@ body{
     --yellowColor: #fff984;
     --shadowColor: #797979;
     --mainFontFamily: "Courier New";
-    --secondaryFontFamily: "Oswald";
+    --secondaryFontFamily: "Oswald", "Sans Serif";
     --fontSizeLarge: 1.8em;
     --fontSizeMedium: 1.0em;
     --fontSizeSmall: 0.9em;
@@ -218,6 +218,7 @@ a:hover{
 
 .innerSection{
     margin-bottom: 26px;
+    max-width: 100%;
 }
 
 .innerSection p{
@@ -311,6 +312,7 @@ footer p{
 /* Gaddis Help */
 .gaddisHelpTable{
     width: 400px;
+    max-width: 100%;
 }
 
 .gaddisHelpTable tr td{
@@ -321,5 +323,6 @@ footer p{
 
 .gaddisHelpImg{
     margin-bottom: 20px;
+    max-width: 100%;
 }
 
