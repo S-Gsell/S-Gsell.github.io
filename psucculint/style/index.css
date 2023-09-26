@@ -24,6 +24,7 @@ body{
     background-color: var(--secondaryColor);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* 2. Fonts & Colors */
