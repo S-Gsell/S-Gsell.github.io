@@ -326,3 +326,14 @@ footer p{
     max-width: 100%;
 }
 
+/* About */
+#aboutMessage{
+    max-width: 100%;
+}
+#aboutMessage p{
+    font-family: var(--secondaryFontFamily);
+    width: 700px;
+    max-width: 100%;
+    line-height: 1.6em;
+    margin: 20px 0;
+}
