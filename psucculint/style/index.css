@@ -307,3 +307,8 @@ footer p{
     font-family: var(--secondaryFontFamily);
     font-weight: 400;
 }
+
+.gaddisHelpImg{
+    margin-bottom: 20px;
+}
+
