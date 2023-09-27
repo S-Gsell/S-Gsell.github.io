@@ -27,6 +27,18 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--secondaryColor);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--mainColor);
+}
+
 /* 2. Fonts & Colors */
 @font-face{
     font-family:"Oswald";
@@ -273,7 +285,6 @@ footer p{
 /* 8. Index/Home */
 #introContainer{
     width: 100vw;
-    height: 400px;
     margin-top: 25vh;
     display: flex;
     flex-direction: column;
