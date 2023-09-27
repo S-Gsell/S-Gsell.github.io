@@ -353,3 +353,7 @@ footer p{
     line-height: 1.6em;
     margin: 20px 0;
 }
+
+#teamLink{
+    text-align: right;
+}
