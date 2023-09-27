@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#89C673" />
+    <title>Psucculint</title>
+    <link rel="icon" type="image/x-icon" href="images/psucculintLogo.ico" />
+    <link href="./style/index.css" rel="stylesheet" type="text/css" />
+</head>
+<style type="text/css">
+    #wallOfFame{
+        width: 800px;
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .reallyCoolPerson{
+        background-color: #f3e444;
+        background: linear-gradient(48deg, rgba(243,228,68,1) 0%, rgba(255,254,222,1) 76%, rgba(243,228,68,1) 100%);
+        border: 2px solid #b29816;
+        padding: 5px;
+        box-shadow: 2px 2px 3px #8e8e8e;
+        width: 175px;
+        text-align: center;
+        margin: 15px 5px;
+    }
+
+    #datFetti{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 50%;
+        height: 80vh;
+        z-index: -1;
+        transform: translateX(-55%);
+        transition: .5s ease-out;
+    }
+</style>
+<body>
+    <nav>
+        <a id="navLogo" href="./index.html"><img src="./images/PsucculintLogoOnly.png" alt="Psucculint home" /></a>
+        <div class="linkContainer">
+            <div class="navLink">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="navLink">
+                <a href="./help.html">Help</a>
+            </div>
+            <div class="navLink">
+                <a href="./about.html">About</a>
+            </div>
+            <div class="navLink">
+                <a href="./download.html">Download</a>
+            </div>
+        </div>
+        <div id="navBurger">
+            <div id="burger1"></div>
+            <div id="burger2"></div>
+            <div id="burger3"></div>
+        </div>
+    </nav>
+    <main>
+        <h1 class="mainHead">The Team</h1>
+        <section class="innerContainer">
+            <h3 class="innerHeader3">You found our hidden wall of fame!</h3>
+            <div id="wallOfFame">
+                <div class="reallyCoolPerson">David Singletary</div>
+                <div class="reallyCoolPerson">William Money</div>
+                <div class="reallyCoolPerson">Steven Gsell</div>
+                <div class="reallyCoolPerson">Corey Burgos</div>
+            </table>
+            <img id="datFetti"></img>
+        </section>
+    </main>
+    <footer><p>Psucculint is a product of Florida State College at Jacksonville</p></footer>
+</body>
+<script src="./index.js"></script>
+<script>
+    const fetti = document.querySelector("#datFetti");
+    fetti.src = "https://media.giphy.com/media/gKrbnqo25MlI2TUC78/giphy.gif";
+
+    setTimeout(() => {
+        fetti.style.opacity = 0;
+    }, 10000)
+</script>
+</html>
